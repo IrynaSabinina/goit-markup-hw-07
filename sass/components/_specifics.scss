@@ -3,50 +3,47 @@
   padding-bottom: 94px;
 }
 
-.specifics-list {
+.specifics__list {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.specifics-section::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.specifics__section {
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/antenna-1.svg);
+    background-size: 66px 70px;
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/clock-1.svg);
+    background-size: 66px 70px;
+  }
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram-1.svg);
+    background-size: 66px 70px;
+  }
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut-1.svg);
+    background-size: 66px 70px;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.specifics-section:nth-child(1)::before {
-  background-image: url(../images/antenna-1.svg);
-  background-size: 66px 70px;
-}
-
-.specifics-section:nth-child(2)::before {
-  background-image: url(../images/clock-1.svg);
-  background-size: 66px 70px;
-}
-
-.specifics-section:nth-child(3)::before {
-  background-image: url(../images/diagram-1.svg);
-  background-size: 66px 70px;
-}
-
-.specifics-section:nth-child(4)::before {
-  background-image: url(../images/astronaut-1.svg);
-  background-size: 66px 70px;
-}
-
-.specifics-section:not(:last-child) {
-  margin-right: 30px;
-}
-
-.specifics-title {
+.specifics__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -56,7 +53,7 @@
   margin-bottom: 10px;
 }
 
-.specifics-text {
+.specifics__text {
   width: 270px;
   font-size: 14px;
   line-height: 1.7;

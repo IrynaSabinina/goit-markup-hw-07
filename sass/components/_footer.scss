@@ -10,7 +10,15 @@ footer {
   align-items: baseline;
 }
 
-.logo-studio-footer {
+.logo__web {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo__studio-footer {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -21,11 +29,11 @@ address {
   margin-top: 20px;
 }
 
-.footer-list {
+.footer__list {
   text-decoration: none;
 }
 
-.footer-list-adress > a {
+.footer__list__adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -35,7 +43,7 @@ address {
   color: var(--bj-color);
 }
 
-.footer-list-mail > a {
+.footer__list__mail {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -48,7 +56,7 @@ address {
   transition-timing-function: var(--time-function);
 }
 
-.footer-list-tell > a {
+.footer__list__tell {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -61,21 +69,21 @@ address {
   transition-timing-function: var(--time-function);
 }
 
-.footer-list-mail > a:hover,
-.footer-list-tell > a:hover,
-.footer-list-mail > a:focus,
-.footer-list-tell > a:focus {
+.footer__list__mail:hover,
+.footer__list__tell:hover,
+.footer__list__mail:focus,
+.footer__list__tell:focus {
   color: var(--accent-color);
 }
 
-.social-contacts {
+.social__contacts {
   width: 206px;
   height: 80px;
   align-items: center;
   margin-left: 70px;
 }
 
-.tittle-action {
+.tittle__action {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -84,7 +92,7 @@ address {
   color: var(--social-icon-hover);
 }
 
-.footer-social-icons {
+.footer__social__icons {
   display: inline-flex;
   align-content: center;
   justify-content: center;
@@ -93,7 +101,7 @@ address {
   margin-bottom: 0px;
 }
 
-.footer-social-list {
+.footer__social__list {
   display: flex;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -102,21 +110,20 @@ address {
   transition-property: background-color;
   transition-duration: var(--time-transformatiom);
   transition-timing-function: var(--time-function);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.footer-social-list:hover,
-.footer-social-list:focus {
+.footer__social__list:hover,
+.footer__social__list:focus {
   background-color: var(--accent-color);
 }
 
-.footer-social-list-icon {
+.footer__social__list__icon {
   width: 20px;
   height: 20px;
   fill: var(--social-icon-hover);
-}
-
-.footer-social-list:not(:last-child) {
-  margin-right: 10px;
 }
 
 .subscribe {
@@ -126,12 +133,12 @@ address {
   margin-right: 0;
 }
 
-.form-input-mail {
+.form__input__mail {
   display: flex;
   flex-direction: column;
 }
 
-.form-input-mail input {
+.form__input__mail input {
   margin-top: 20px;
   padding: 15px;
   width: 358px;
@@ -146,14 +153,14 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-input-mailinput::placeholder {
+.form__input__mail input::placeholder {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-input-mail label {
+.form__input__mail label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -162,7 +169,7 @@ address {
   color: var(--bj-color);
 }
 
-.button-subscribe {
+.button__subscribe {
   position: absolute;
   display: inline-flex;
   justify-content: center;
@@ -181,7 +188,7 @@ address {
   border-radius: 4px;
 }
 
-.button-subscribe::after {
+.button__subscribe::after {
   content: "";
   width: 24px;
   height: 24px;

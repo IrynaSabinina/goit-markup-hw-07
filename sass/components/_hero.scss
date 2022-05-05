@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -26,7 +26,7 @@
   color: var(--bj-color);
 }
 
-.hero-button {
+.hero__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +43,7 @@
   color: var(--bj-color);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   cursor: pointer;
 }

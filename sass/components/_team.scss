@@ -1,11 +1,8 @@
-.about {
-  background-color: var(--bj-about);
-}
-.about-team {
+.team {
   background-color: var(--bj-team);
 }
 
-.about-team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -14,12 +11,12 @@
   color: var(--title-text-color);
 }
 
-.about-team-list {
+.team__list {
   display: flex;
   margin-top: 50px;
 }
 
-.person-card {
+.team__list__person-card {
   box-sizing: border-box;
   width: 270px;
   height: auto;
@@ -27,19 +24,18 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.person-card:not(:last-child) {
-  margin-right: 30px;
-}
-
-.person-text {
+.team__list__person-card__text {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.team__list__person-card__text__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -49,7 +45,7 @@
   margin-bottom: 0px;
 }
 
-.team-position {
+.team__list__person-card__text__position {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -58,7 +54,7 @@
   margin-top: 10px;
 }
 
-.social-icons {
+.team__social {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -68,13 +64,16 @@
   padding: 0;
 }
 
-.social-list {
+.social__list {
   transition-property: background-color;
   transition-duration: var(--time-transformatiom);
   transition-timing-function: var(--time-function);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.social-list-iteam {
+.social__list__iteam {
   display: flex;
   width: 44px;
   height: 44px;
@@ -86,11 +85,11 @@
   transition-timing-function: var(--time-function);
 }
 
-.social-list-iteam:hover {
+.social__list__iteam:hover {
   background-color: var(--accent-color);
 }
 
-.social-list-icon {
+.social__list__icon {
   width: 20px;
   height: 20px;
   fill: var(--social-icon);
@@ -99,10 +98,6 @@
   transition-timing-function: var(--time-function);
 }
 
-.social-list-iteam:hover .social-list-icon {
+.social__list__iteam:hover .social__list__icon {
   fill: var(--social-icon-hover);
-}
-
-.social-list:not(:last-child) {
-  margin-right: 10px;
 }

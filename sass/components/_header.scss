@@ -7,12 +7,16 @@ header {
   background-color: var(--bj-color);
 }
 
-.page-nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.logo-web {
+.nav__logo {
+  text-decoration: none;
+}
+
+.logo__web {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -20,7 +24,7 @@ header {
   color: var(--accent-color);
 }
 
-.logo-studio {
+.logo__studio {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -37,13 +41,16 @@ header {
   transition-timing-function: var(--time-function);
 }
 
-.nav-list-link {
+.nav__list__link {
   display: flex;
   position: relative;
   align-items: baseline;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.nav-list-link .accent::after {
+.nav__list__link .accent::after {
   content: "";
   position: absolute;
   left: 0;
@@ -53,12 +60,8 @@ header {
   background-color: var(--accent-color);
 }
 
-.nav-list-link:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list-link .link:hover,
-.nav-list-link .link:focus {
+.nav__list__link .link:hover,
+.nav__list__link .link:focus {
   color: var(--accent-color);
 }
 
@@ -73,13 +76,13 @@ header {
   align-items: center;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
 
-.nav-list-icon-mail {
+.nav__list__icon__mail {
   width: 16px;
   height: 12px;
   fill: var(--social-icon);
@@ -92,7 +95,7 @@ header {
   transition-timing-function: var(--time-function);
 }
 
-.nav-list-icon-phone {
+.nav__list__icon__phone {
   width: 10px;
   height: 16px;
   fill: var(--social-icon);
@@ -105,37 +108,36 @@ header {
   transition-timing-function: var(--time-function);
 }
 
-.nav.list .link {
+.nav__list .link {
   display: block;
   align-items: center;
   justify-content: baseline;
 }
 
-.page-header-registration {
+.header__registration {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.nav-list-link:hover {
+.nav__list__link:hover {
   color: var(--accent-color);
 }
 
-.nav-list-link .mail:hover,
-.nav-list-link .tell:hover,
-.nav-list-link .mail:focus,
-.nav-list-link .tell:focus {
+.nav__list__link .mail:hover,
+.nav__list__link .tell:hover {
   color: var(--accent-color);
 }
 
-.nav-list-link:hover .nav-list-icon-mail {
+.nav__list__link .mail:focus,
+.nav__list__link .tell:focus {
+  color: var(--accent-color);
+}
+
+.nav__list__link:hover .nav__list__icon__mail {
   fill: var(--accent-color);
 }
 
-.nav-list-link:hover .nav-list-icon-phone {
+.nav__list__link:hover .nav__list__icon__phone {
   fill: var(--accent-color);
-}
-
-.page-nav-logo {
-  text-decoration: none;
 }
