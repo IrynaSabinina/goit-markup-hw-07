@@ -41,6 +41,10 @@ header {
   transition-timing-function: var(--time-function);
 }
 
+.link--accent {
+  color: var(--accent-color);
+}
+
 .nav__list__link {
   display: flex;
   position: relative;
