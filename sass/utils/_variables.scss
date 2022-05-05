@@ -12,18 +12,6 @@
   --indent: 30px;
   --time-transformatiom: 250ms;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.accent {
-  color: var(--accent-color);
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  --basic-font-roboto: "Roboto", sans-serif;
+  --basic-fort-relway: "Raleway", sans-serif;
 }

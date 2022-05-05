@@ -12,6 +12,21 @@
   transition-property: box-shadow;
   transition-duration: var(--time-transformatiom);
   transition-timing-function: var(--time-function);
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-child(n + 7) {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    .project-overlay {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+  }
 }
 
 .project-img-box {
@@ -41,25 +56,6 @@
   color: var(--bj-about);
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.project:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project:hover .project-overlay {
-  transform: translateY(-100%);
-  opacity: 1;
-}
-
-.project:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.project:nth-child(n + 7) {
-  margin-bottom: 0px;
 }
 
 .project-text {

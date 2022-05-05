@@ -1,7 +1,8 @@
 @import "./utils/variables";
+@import "./utils/hidden.scss";
 
-@import "./utils/base";
-@import "./utils/reset";
+@import "./base/base";
+@import "./base/reset";
 
 // components//
 @import "./components/header";

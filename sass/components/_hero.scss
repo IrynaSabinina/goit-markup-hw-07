@@ -41,9 +41,8 @@
   line-height: 1.9;
   text-align: center;
   color: var(--bj-color);
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
